@@ -2,12 +2,12 @@
 import React, { useEffect } from 'react';
 import Header from '../components/Header';
 import Hero from '../components/Hero';
-import VideoSection from '../components/VideoSection';
 import Features from '../components/Features';
 import HowItWorks from '../components/HowItWorks';
 import Testimonials from '../components/Testimonials';
 import FAQ from '../components/FAQ';
 import LegalDisclaimer from '../components/LegalDisclaimer';
+import VideoSection from '../components/VideoSection';
 import Footer from '../components/Footer';
 
 const Index = () => {
@@ -48,12 +48,12 @@ const Index = () => {
       <Header />
       <main>
         <Hero />
-        <VideoSection />
         <Features />
         <HowItWorks />
         <Testimonials />
         <FAQ />
         <LegalDisclaimer />
+        <VideoSection />
       </main>
       <Footer />
     </div>
