@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef } from 'react';
 import { Clapperboard, Star, Film } from 'lucide-react';
 
@@ -9,16 +8,14 @@ const Hero = () => {
     const cube = heroCubeRef.current;
     if (!cube) return;
     
-    let rotateX = 0;
     let rotateY = 0;
     let animationFrameId: number;
     
     const animate = () => {
       rotateY += 0.2;
-      rotateX = Math.sin(rotateY * 0.01) * 10;
       
       if (cube) {
-        cube.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+        cube.style.transform = `rotateY(${rotateY}deg)`;
       }
       
       animationFrameId = requestAnimationFrame(animate);
@@ -101,8 +98,8 @@ const Hero = () => {
               className="w-full h-full preserve-3d absolute"
               style={{ transformStyle: 'preserve-3d' }}
             >
-              {/* 3D Cube */}
-              <div className="absolute inset-0 glass-card flex items-center justify-center transform translate-z-[150px]">
+              {/* 3D Cube - Each face now preserves text readability */}
+              <div className="absolute inset-0 glass-card flex items-center justify-center transform translate-z-[150px]" style={{ backfaceVisibility: 'hidden' }}>
                 <div className="text-center p-8">
                   <Film className="h-12 w-12 text-hollywood-primary mx-auto mb-4" />
                   <h3 className="text-xl font-bold text-white mb-2">Professional Format</h3>
@@ -110,7 +107,7 @@ const Hero = () => {
                 </div>
               </div>
               
-              <div className="absolute inset-0 glass-card flex items-center justify-center transform rotateY(90deg) translate-z-[150px]">
+              <div className="absolute inset-0 glass-card flex items-center justify-center transform rotateY(90deg) translate-z-[150px]" style={{ backfaceVisibility: 'hidden' }}>
                 <div className="text-center p-8">
                   <Star className="h-12 w-12 text-hollywood-accent mx-auto mb-4" />
                   <h3 className="text-xl font-bold text-white mb-2">Award-Winning Quality</h3>
@@ -118,7 +115,7 @@ const Hero = () => {
                 </div>
               </div>
               
-              <div className="absolute inset-0 glass-card flex items-center justify-center transform rotateY(180deg) translate-z-[150px]">
+              <div className="absolute inset-0 glass-card flex items-center justify-center transform rotateY(180deg) translate-z-[150px]" style={{ backfaceVisibility: 'hidden' }}>
                 <div className="text-center p-8">
                   <Clapperboard className="h-12 w-12 text-hollywood-blue mx-auto mb-4" />
                   <h3 className="text-xl font-bold text-white mb-2">13 Act Structure</h3>
@@ -126,7 +123,7 @@ const Hero = () => {
                 </div>
               </div>
               
-              <div className="absolute inset-0 glass-card flex items-center justify-center transform rotateY(270deg) translate-z-[150px]">
+              <div className="absolute inset-0 glass-card flex items-center justify-center transform rotateY(270deg) translate-z-[150px]" style={{ backfaceVisibility: 'hidden' }}>
                 <div className="text-center p-8">
                   <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#F97316" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="mx-auto mb-4">
                     <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z" />
@@ -140,7 +137,7 @@ const Hero = () => {
                 </div>
               </div>
               
-              <div className="absolute inset-0 glass-card flex items-center justify-center transform rotateX(90deg) translate-z-[150px]">
+              <div className="absolute inset-0 glass-card flex items-center justify-center transform rotateX(90deg) translate-z-[150px]" style={{ backfaceVisibility: 'hidden' }}>
                 <div className="text-center p-8">
                   <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#9b87f5" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="mx-auto mb-4">
                     <path d="M17 6.1H3" />
@@ -152,7 +149,7 @@ const Hero = () => {
                 </div>
               </div>
               
-              <div className="absolute inset-0 glass-card flex items-center justify-center transform rotateX(270deg) translate-z-[150px]">
+              <div className="absolute inset-0 glass-card flex items-center justify-center transform rotateX(270deg) translate-z-[150px]" style={{ backfaceVisibility: 'hidden' }}>
                 <div className="text-center p-8">
                   <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#D946EF" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="mx-auto mb-4">
                     <path d="M12 12c-2-2.96-1.8-5.27-.5-7.93.86 2.99 2.52 4.92 4.5 7.93-1.48 2.56-3.16 4.03-4 5.07-1.68-2.05-1.86-3.21 0-5.07Z" />
