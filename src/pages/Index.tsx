@@ -1,5 +1,5 @@
 
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Header from '../components/Header';
 import Hero from '../components/Hero';
 import Features from '../components/Features';
@@ -9,9 +9,18 @@ import FAQ from '../components/FAQ';
 import LegalDisclaimer from '../components/LegalDisclaimer';
 import VideoSection from '../components/VideoSection';
 import Footer from '../components/Footer';
+import DisclaimerPopup from '../components/DisclaimerPopup';
 
 const Index = () => {
+  const [showDisclaimer, setShowDisclaimer] = useState(false);
+
   useEffect(() => {
+    // Check if user has already agreed to disclaimer
+    const hasAgreed = localStorage.getItem('disclaimerAgreed') === 'true';
+    if (!hasAgreed) {
+      setShowDisclaimer(true);
+    }
+
     // Smooth scroll for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
@@ -56,6 +65,10 @@ const Index = () => {
         <VideoSection />
       </main>
       <Footer />
+      <DisclaimerPopup 
+        isOpen={showDisclaimer} 
+        onClose={() => setShowDisclaimer(false)} 
+      />
     </div>
   );
 };
