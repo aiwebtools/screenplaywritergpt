@@ -46,19 +46,20 @@ const Hero = () => {
             <div className="inline-block mb-4">
               <div className="px-4 py-1 rounded-full bg-white/5 border border-hollywood-primary/30 inline-flex items-center">
                 <Star className="h-4 w-4 text-hollywood-primary mr-2" />
-                <span className="text-xs font-medium text-white/90">Award-Winning Screenplay Generation</span>
+                <span className="text-xs font-medium text-white/90">Free AI Tools by AI Web Tools</span>
               </div>
             </div>
             
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
-              <span className="text-gradient-primary">Screenplay Writer GPT</span>
+              <span className="text-gradient-primary">Free AI Screenplay Writer</span>
               <br /> 
-              <span className="text-white">Your AI Screenwriting Partner</span>
+              <span className="text-white">Professional Script Generator</span>
             </h1>
             
             <p className="text-lg text-white/80 max-w-xl mx-auto lg:mx-0">
-              Transform your ideas into professional screenplays with our advanced AI assistant. 
-              Crafted with precision, imagination, and the art of storytelling.
+              The best free AI screenwriting tool by AI Web Tools. Create professional movie scripts, 
+              TV screenplays, and dramatic scripts with our advanced AI writing assistant. 
+              Transform your ideas into industry-standard screenplays instantly.
             </p>
             
             <div className="pt-4 flex flex-wrap gap-4 justify-center lg:justify-start">
@@ -67,16 +68,18 @@ const Hero = () => {
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="cta-button"
+                aria-label="Try our free AI screenplay writer tool"
               >
-                Try Screenplay Writer GPT Now
+                Try Free AI Screenplay Writer
               </a>
               <a 
                 href="https://www.aiwebtools.ai" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="btn-secondary"
+                aria-label="Explore more free AI tools by AI Web Tools"
               >
-                Explore More AI Tools
+                More Free AI Tools
               </a>
             </div>
             
@@ -89,8 +92,8 @@ const Hero = () => {
                 ))}
               </div>
               <div className="ml-4">
-                <p className="text-white font-medium">500+ Screenplays Written</p>
-                <p className="text-xs text-white/60">Trusted by professionals worldwide</p>
+                <p className="text-white font-medium">500+ Free AI Screenplays Created</p>
+                <p className="text-xs text-white/60">Trusted by writers worldwide - Powered by AI Web Tools</p>
               </div>
             </div>
           </div>
@@ -177,9 +180,9 @@ const Hero = () => {
       </div>
       
       <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-center">
-        <p className="text-xs text-white/50 mb-2">Unlock Your Dreams</p>
+        <p className="text-xs text-white/50 mb-2">Free AI Tools - Unlock Your Dreams</p>
         <a href="https://www.aiwebtools.ai" target="_blank" rel="noopener noreferrer" className="text-hollywood-primary hover:underline text-sm font-medium">
-          AiWebTools.Ai
+          AI Web Tools - AiWebTools.Ai
         </a>
       </div>
     </section>

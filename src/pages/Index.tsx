@@ -10,6 +10,7 @@ import LegalDisclaimer from '../components/LegalDisclaimer';
 import VideoSection from '../components/VideoSection';
 import Footer from '../components/Footer';
 import DisclaimerPopup from '../components/DisclaimerPopup';
+import SEO from '../components/SEO';
 
 const Index = () => {
   const [showDisclaimer, setShowDisclaimer] = useState(false);
@@ -54,6 +55,7 @@ const Index = () => {
 
   return (
     <div className="min-h-screen w-full overflow-x-hidden">
+      <SEO />
       <Header />
       <main>
         <Hero />

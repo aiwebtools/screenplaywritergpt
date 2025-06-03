@@ -6,43 +6,43 @@ const Features = () => {
   const features = [
     {
       icon: <MessageSquare className="h-10 w-10 text-hollywood-primary" />,
-      title: "Guided Script Creation",
-      description: "Answers key questions about genre, premise, and characters to shape your screenplay exactly to your vision."
+      title: "Free AI Script Creation",
+      description: "Our free AI tools guide you through screenplay creation with questions about genre, premise, and characters to shape your script perfectly."
     },
     {
       icon: <FileText className="h-10 w-10 text-hollywood-primary" />,
-      title: "Detailed Outlining",
-      description: "Creates comprehensive outlines with act titles, scene breakdowns, and character development plans."
+      title: "Professional Screenplay Outlining",
+      description: "Generate comprehensive outlines with act titles, scene breakdowns, and character development plans using advanced AI technology."
     },
     {
       icon: <FileEdit className="h-10 w-10 text-hollywood-accent" />,
-      title: "Professional Formatting",
-      description: "Properly formatted scene headings, dialogue, action lines, and transitions according to industry standards."
+      title: "Industry-Standard Formatting",
+      description: "AI Web Tools ensures properly formatted scene headings, dialogue, action lines, and transitions according to Hollywood standards."
     },
     {
       icon: <Star className="h-10 w-10 text-hollywood-accent" />,
-      title: "Award-Winning Writing Style",
-      description: "Compelling dialogue, vivid imagery, and engaging narratives indistinguishable from human writers."
+      title: "Award-Winning AI Writing",
+      description: "Our free AI screenplay writer creates compelling dialogue, vivid imagery, and engaging narratives comparable to professional screenwriters."
     },
     {
       icon: <Rocket className="h-10 w-10 text-hollywood-blue" />,
-      title: "Complete Memory",
-      description: "Maintains perfect recall of your entire screenplay for consistent character development and storylines."
+      title: "Complete Script Memory",
+      description: "Advanced AI maintains perfect recall of your entire screenplay for consistent character development and storylines throughout your script."
     },
     {
       icon: <Sparkles className="h-10 w-10 text-hollywood-blue" />,
-      title: "Creative Techniques",
-      description: "Implements cliffhangers, foreshadowing, and plot twists to keep your audience engaged."
+      title: "Creative AI Techniques",
+      description: "Implements cliffhangers, foreshadowing, and plot twists automatically to keep your audience engaged with professional storytelling."
     },
     {
       icon: <Briefcase className="h-10 w-10 text-hollywood-highlight" />,
-      title: "TV & Commercial Scripts",
-      description: "Specialized in television formats with perfect 13-act structure and commercial break positioning."
+      title: "TV & Movie Script Generator",
+      description: "Specialized free AI tools for television formats with perfect 13-act structure and commercial break positioning for TV scripts."
     },
     {
       icon: <CheckCircle className="h-10 w-10 text-hollywood-highlight" />,
-      title: "Collaborative Approach",
-      description: "Works with you scene-by-scene, incorporating your feedback for a truly personalized screenplay."
+      title: "Collaborative AI Writing",
+      description: "Our free AI screenplay writer works with you scene-by-scene, incorporating your feedback for truly personalized scripts."
     }
   ];
 
@@ -56,11 +56,11 @@ const Features = () => {
       <div className="container-custom relative z-10">
         <div className="max-w-4xl mx-auto text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-gradient-primary">
-            Powerful Screenwriting Features
+            Free AI Screenwriting Tools Features
           </h2>
           <p className="text-white/80 text-lg">
-            Screenplay Writer GPT combines professional screenwriting techniques with advanced AI
-            to create compelling, industry-standard scripts.
+            AI Web Tools combines professional screenwriting techniques with advanced artificial intelligence
+            to create compelling, industry-standard scripts. Discover why we're the best free AI tools for writers.
           </p>
         </div>
         
@@ -83,8 +83,9 @@ const Features = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="cta-button"
+            aria-label="Start using our free AI screenplay writer tool"
           >
-            Start Writing Your Screenplay Now
+            Start Writing Your Screenplay with Free AI Tools
           </a>
         </div>
       </div>
