@@ -2,6 +2,8 @@
 import React from 'react';
 import { Clapperboard, Phone, Mail } from 'lucide-react';
 
+const AIWEBTOOLS_URL = "https://aiwebtools.lovable.app/?via=aiwebtools";
+
 const Footer = () => {
   return (
     <footer className="bg-hollywood-darker relative">
@@ -26,7 +28,7 @@ const Footer = () => {
               ease and precision.
             </p>
             <div className="mt-6">
-              <a href="https://www.aiwebtools.ai" target="_blank" rel="noopener noreferrer" className="text-sm text-hollywood-primary hover:underline">
+              <a href={AIWEBTOOLS_URL} target="_blank" rel="noopener noreferrer" className="text-sm text-hollywood-primary hover:underline">
                 Visit AiWebTools.Ai
               </a>
             </div>
@@ -56,7 +58,7 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="https://www.aiwebtools.ai" target="_blank" rel="noopener noreferrer" className="text-white/70 hover:text-white transition-colors">
+                <a href={AIWEBTOOLS_URL} target="_blank" rel="noopener noreferrer" className="text-white/70 hover:text-white transition-colors">
                   More AI Tools
                 </a>
               </li>
@@ -72,7 +74,7 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="https://aiwebtools.ai/terms-of-services" target="_blank" rel="noopener noreferrer" className="text-white/70 hover:text-white transition-colors">
+                <a href="https://aiwebtools.lovable.app/?via=aiwebtools" target="_blank" rel="noopener noreferrer" className="text-white/70 hover:text-white transition-colors">
                   Terms of Service
                 </a>
               </li>
@@ -103,7 +105,7 @@ const Footer = () => {
             
             <div className="mt-6">
               <a 
-                href="https://www.aiwebtools.ai" 
+                href={AIWEBTOOLS_URL} 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center px-6 py-3 bg-hollywood-primary/10 hover:bg-hollywood-primary/20 rounded-full border border-hollywood-primary/30 text-white transition-all duration-300"
@@ -116,10 +118,10 @@ const Footer = () => {
         
         <div className="border-t border-white/10 pt-6 text-center">
           <p className="text-white/50 text-sm">
-            © 2025 <a href="https://www.aiwebtools.ai" target="_blank" rel="noopener noreferrer" className="text-hollywood-primary hover:underline">AI WEB TOOLS LLC</a> All rights reserved.
+            © 2025 <a href={AIWEBTOOLS_URL} target="_blank" rel="noopener noreferrer" className="text-hollywood-primary hover:underline">AI WEB TOOLS LLC</a> All rights reserved.
           </p>
           <p className="text-white/50 text-xs mt-2">
-            Unlock Your Dreams ~ <a href="https://www.aiwebtools.ai" target="_blank" rel="noopener noreferrer" className="text-hollywood-primary hover:underline">AiWebTools.Ai</a>
+            Unlock Your Dreams ~ <a href={AIWEBTOOLS_URL} target="_blank" rel="noopener noreferrer" className="text-hollywood-primary hover:underline">AiWebTools.Ai</a>
           </p>
         </div>
       </div>

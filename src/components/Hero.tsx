@@ -73,7 +73,7 @@ const Hero = () => {
                 Try Free AI Screenplay Writer
               </a>
               <a 
-                href="https://www.aiwebtools.ai" 
+                href="https://aiwebtools.lovable.app/?via=aiwebtools" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="btn-secondary"
@@ -181,7 +181,7 @@ const Hero = () => {
       
       <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-center">
         <p className="text-xs text-white/50 mb-2">Free AI Tools - Unlock Your Dreams</p>
-        <a href="https://www.aiwebtools.ai" target="_blank" rel="noopener noreferrer" className="text-hollywood-primary hover:underline text-sm font-medium">
+        <a href="https://aiwebtools.lovable.app/?via=aiwebtools" target="_blank" rel="noopener noreferrer" className="text-hollywood-primary hover:underline text-sm font-medium">
           AI Web Tools - AiWebTools.Ai
         </a>
       </div>
